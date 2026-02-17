@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "id": "group-s1-1700966851127-vcwu",
+      "id": "group-s1-1701359466546-unzt",
       "type": "group",
       "data": { "label": "S1" },
       "position": { "x": 150, "y": -705 },
@@ -26,7 +26,7 @@
       "position": { "x": 15, "y": 60 },
       "width": 300,
       "height": 208,
-      "parentId": "group-s1-1700966851127-vcwu",
+      "parentId": "group-s1-1701359466546-unzt",
       "extent": "parent"
     },
     {
@@ -36,7 +36,7 @@
       "position": { "x": 210, "y": 285 },
       "width": 300,
       "height": 297,
-      "parentId": "group-s1-1700966851127-vcwu",
+      "parentId": "group-s1-1701359466546-unzt",
       "extent": "parent"
     },
     {
@@ -46,7 +46,7 @@
       "position": { "x": 570, "y": 90 },
       "width": 300,
       "height": 299,
-      "parentId": "group-s1-1700966851127-vcwu",
+      "parentId": "group-s1-1701359466546-unzt",
       "extent": "parent"
     },
     {
@@ -56,7 +56,7 @@
       "position": { "x": 915, "y": 225 },
       "width": 300,
       "height": 299,
-      "parentId": "group-s1-1700966851127-vcwu",
+      "parentId": "group-s1-1701359466546-unzt",
       "extent": "parent"
     },
     {
@@ -76,17 +76,17 @@
       "position": { "x": 1095, "y": 540 },
       "width": 402,
       "height": 237,
-      "parentId": "group-s1-1700966851127-vcwu",
+      "parentId": "group-s1-1701359466546-unzt",
       "extent": "parent"
     },
     {
       "id": "alignment-gate-6",
       "type": "alignment-gate",
-      "data": { "group": "S1", "label": "Alignment Gate", "description": "Non-blocking: مراجعة سريعة لتأكيد أن الأطراف متفقة على شكل المنتج (Actors/Flow/Rules) قبل التقدم." },
+      "data": { "group": "S1", "label": "Alignment Gate", "description": "Non-blocking: \u0645\u0631\u0627\u062c\u0639\u0629 \u0633\u0631\u064a\u0639\u0629 \u0644\u062a\u0623\u0643\u064a\u062f \u0623\u0646 \u0627\u0644\u0623\u0637\u0631\u0627\u0641 \u0645\u062a\u0641\u0642\u0629 \u0639\u0644\u0649 \u0634\u0643\u0644 \u0627\u0644\u0645\u0646\u062a\u062c (Actors/Flow/Rules) \u0642\u0628\u0644 \u0627\u0644\u062a\u0642\u062f\u0645." },
       "position": { "x": 1395, "y": 795 },
       "width": 280,
       "height": 298,
-      "parentId": "group-s1-1700966851127-vcwu",
+      "parentId": "group-s1-1701359466546-unzt",
       "extent": "parent"
     },
     {
@@ -104,7 +104,7 @@
       "position": { "x": 1320, "y": 75 },
       "width": 320,
       "height": 290,
-      "parentId": "group-s1-1700966851127-vcwu",
+      "parentId": "group-s1-1701359466546-unzt",
       "extent": "parent"
     }
   ],
