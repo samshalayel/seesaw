@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "id": "group-s1-1700850401463-urar",
+      "type": "group",
+      "data": { "label": "S1" },
+      "position": { "x": 150, "y": -705 },
+      "width": 1697,
+      "height": 1100,
+      "style": { "width": 1697, "height": 1100, "zIndex": -1 }
+    },
+    {
+      "id": "stage-1-1",
+      "type": "stage-1",
+      "data": {
+        "group": "S1",
+        "label": "Stage 1 — Product Shape",
+        "description": "المشروع يهدف لتسهيل إدارة التذاكر بشكل فعّال، عبر ميزات كالإشعارات الفورية والتقارير وتحليل الأداء للمهام المختلفة. الأولوية للميزات الأساسية كالتصنيف الفوري والتصعيد التلقائي.",
+        "aiPercentage": 20,
+        "humanPercentage": 80,
+        "aiResponsibilities": ["صياغة قصص المستخدم من المهام","اكتشاف الحالات الحدية في التدفقات","تحليل السوق والمقارنة","تفكيك الميزات إلى وحدات أصغر"],
+        "humanResponsibilities": ["تحديد رؤية المنتج","اعتماد حدود MVP","امتلاك منطق الأولويات","الموافقة على نطاق المنتج"],
+        "stageNumber": 1,
+        "customFields": {}
+      },
+      "position": { "x": 15, "y": 60 },
+      "width": 300,
+      "height": 208,
+      "parentId": "group-s1-1700850401463-urar",
+      "extent": "parent"
+    },
+    {
+      "id": "insight-node-2",
+      "type": "insight-node",
+      "data": { "group": "S1", "label": "Insight", "description": "المستخدمون بحاجة لرؤية تذاكرهم بسرعة وتلقي تحديثات فورية عبر الإشعارات. الحالات الحدية تتضمن تذاكر متأخرة وتحتاج لتصعيد تلقائي." },
+      "position": { "x": 210, "y": 285 },
+      "width": 300,
+      "height": 297,
+      "parentId": "group-s1-1700850401463-urar",
+      "extent": "parent"
+    },
+    {
+      "id": "outcome-node-3",
+      "type": "outcome-node",
+      "data": { "group": "S1", "label": "Outcome", "description": "المخرجات: نطاق MVP معتمد + قصص المستخدم + تعريف الأولويات + قائمة الحالات الحدية." },
+      "position": { "x": 570, "y": 90 },
+      "width": 300,
+      "height": 299,
+      "parentId": "group-s1-1700850401463-urar",
+      "extent": "parent"
+    },
+    {
+      "id": "direction-node-4",
+      "type": "direction-node",
+      "data": { "group": "S1", "label": "Direction", "description": "الاتجاه العام هو التركيز على التصنيف الفوري والتصعيد التلقائي كميزات جوهرية، في حين يتم تأجيل الميزات الأخرى كربط الأجهزة إلى مراحل لاحقة." },
+      "position": { "x": 915, "y": 225 },
+      "width": 300,
+      "height": 299,
+      "parentId": "group-s1-1700850401463-urar",
+      "extent": "parent"
+    },
+    {
+      "id": "gate-problem-5",
+      "type": "gate-problem",
+      "data": {
+        "group": "S1",
+        "label": "S1 Blocking Gate",
+        "description": "بوابة المنتج: هل تم تحديد نطاق MVP بوضوح وهل الأولويات معتمدة للانتقال للمعمارية؟",
+        "gateType": "product",
+        "decisionAuthority": "Human Only",
+        "gateStatus": "pending",
+        "aiPercentage": 0,
+        "humanPercentage": 100,
+        "gateChecklist": ["تم تحديد رؤية المنتج","تم تعريف حدود MVP","تم اعتماد الأولويات","تم كتابة قصص المستخدم الرئيسية","تم حصر الحالات الحدية"]
+      },
+      "position": { "x": 1095, "y": 540 },
+      "width": 402,
+      "height": 237,
+      "parentId": "group-s1-1700850401463-urar",
+      "extent": "parent"
+    },
+    {
+      "id": "alignment-gate-6",
+      "type": "alignment-gate",
+      "data": { "group": "S1", "label": "Alignment Gate", "description": "Non-blocking: مراجعة سريعة لتأكيد أن الأطراف متفقة على شكل المنتج (Actors/Flow/Rules) قبل التقدم." },
+      "position": { "x": 1395, "y": 795 },
+      "width": 280,
+      "height": 298,
+      "parentId": "group-s1-1700850401463-urar",
+      "extent": "parent"
+    },
+    {
+      "id": "evidence-node-7",
+      "type": "evidence-node",
+      "data": {
+        "group": "S1",
+        "label": "Evidence",
+        "mandatory": true,
+        "description": "الأدلة: وثيقة نطاق MVP + قصص المستخدم + مصفوفة الأولويات.",
+        "evidenceKey": "s1_docs_pack",
+        "justification": "هذه الأدلة حاسمة لتحديد ما إذا كانت الجهود موجهة بشكل صحيح نحو أهداف المشروع الواضحة والمتفق عليها.",
+        "owner": "مدير المنتج أو الفريق المسؤول"
+      },
+      "position": { "x": 1320, "y": 75 },
+      "width": 320,
+      "height": 290,
+      "parentId": "group-s1-1700850401463-urar",
+      "extent": "parent"
+    }
+  ],
+  "edges": [
+    { "id": "e-s1-insight", "type": "custom", "source": "stage-1-1", "target": "insight-node-2" },
+    { "id": "e-insight-outcome", "type": "custom", "source": "insight-node-2", "target": "outcome-node-3" },
+    { "id": "e-outcome-direction", "type": "custom", "source": "outcome-node-3", "target": "direction-node-4" },
+    { "id": "e-direction-gate", "type": "custom", "source": "direction-node-4", "target": "gate-problem-5" },
+    { "id": "e-gate-alignment", "type": "custom", "source": "gate-problem-5", "target": "alignment-gate-6" },
+    { "id": "e-evidence-gate", "type": "custom", "source": "evidence-node-7", "target": "gate-problem-5", "label": "evidence" }
+  ],
+  "evidence": [],
+  "exportedAt": ""
+}
