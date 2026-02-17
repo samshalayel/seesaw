@@ -1,0 +1,168 @@
+{
+  "nodes": [
+    {
+      "id": "group-s2-1701302102453-yciv",
+      "type": "group",
+      "data": { "label": "S2" },
+      "position": { "x": 150, "y": -705 },
+      "width": 1697,
+      "height": 1100,
+      "style": { "width": 1697, "height": 1100, "zIndex": -1 }
+    },
+    {
+      "id": "stage-2-1",
+      "type": "stage-2",
+      "data": {
+        "group": "S2",
+        "label": "Stage 2 — Conceptual Architecture Spine",
+        "description": "يحتاج النظام إلى إعادة تصميم العمود الفقري المعماري بشكل مفاهيمي لضمان تحسين الأداء ودقة المعلومات وتقليل الأخطاء التقنية.",
+        "aiPercentage": 25,
+        "humanPercentage": 75,
+        "aiResponsibilities": [],
+        "humanResponsibilities": [],
+        "stageNumber": 2,
+        "customFields": {}
+      },
+      "position": { "x": 15, "y": 60 },
+      "width": 300,
+      "height": 208,
+      "parentId": "group-s2-1701302102453-yciv",
+      "extent": "parent"
+    },
+    {
+      "id": "insight-node-2",
+      "type": "insight-node",
+      "data": {
+        "group": "S2",
+        "label": "Insight",
+        "description": "المشاكل الحالية تتطلب إعادة تصميم العمود الفقري للنظام باستخدام تقنيات حديثة تلائم متطلبات المستخدمين والأجهزة."
+      },
+      "position": { "x": 210, "y": 285 },
+      "width": 300,
+      "height": 297,
+      "parentId": "group-s2-1701302102453-yciv",
+      "extent": "parent"
+    },
+    {
+      "id": "outcome-node-3",
+      "type": "outcome-node",
+      "data": {
+        "group": "S2",
+        "label": "Outcome",
+        "description": "عمود فقري مفاهيمي جديد ومحسّن للنظام يتجنب كل المشكلات الحالية."
+      },
+      "position": { "x": 570, "y": 90 },
+      "width": 300,
+      "height": 299,
+      "parentId": "group-s2-1701302102453-yciv",
+      "extent": "parent"
+    },
+    {
+      "id": "direction-node-4",
+      "type": "direction-node",
+      "data": {
+        "group": "S2",
+        "label": "Direction",
+        "description": "إعادة بناء التصميم المفاهيمي للنظام بالتركيز على تحسين الأداء والمعالجة التقنية بدقة عالية."
+      },
+      "position": { "x": 915, "y": 225 },
+      "width": 300,
+      "height": 299,
+      "parentId": "group-s2-1701302102453-yciv",
+      "extent": "parent"
+    },
+    {
+      "id": "gate-problem-5",
+      "type": "gate-problem",
+      "data": {
+        "group": "S2",
+        "label": "S2 Blocking Gate",
+        "description": "تحليل للتأكد من أن التصميم المفاهيمي الجديد يلبي كل الاحتياجات ويحل كل المشكلات.",
+        "gateType": "architecture",
+        "decisionAuthority": "Human Only",
+        "gateStatus": "pending",
+        "aiPercentage": 0,
+        "humanPercentage": 100,
+        "gateChecklist": []
+      },
+      "position": { "x": 1095, "y": 540 },
+      "width": 402,
+      "height": 237,
+      "parentId": "group-s2-1701302102453-yciv",
+      "extent": "parent"
+    },
+    {
+      "id": "alignment-gate-6",
+      "type": "alignment-gate",
+      "data": {
+        "group": "S2",
+        "label": "Alignment Gate",
+        "description": "Non-blocking: مراجعة سريعة للتأكد أن العمود الفقري المفاهيمي لا يتجاوز النطاق ولا يقفز للتقنيات."
+      },
+      "position": { "x": 1395, "y": 795 },
+      "width": 280,
+      "height": 298,
+      "parentId": "group-s2-1701302102453-yciv",
+      "extent": "parent"
+    },
+    {
+      "id": "evidence-node-7",
+      "type": "evidence-node",
+      "data": {
+        "group": "S2",
+        "label": "Evidence",
+        "mandatory": true,
+        "description": "جمع معمق للمشاكل الحالية الداخلة ضمن نطاق المعمارية وتصميم حلول مفاهيمية مناسبة.",
+        "evidenceKey": "s2_docs_pack",
+        "justification": "لحل كل المشاكل التقنية والإدارية الحالية",
+        "owner": "فريق الدعم الفني"
+      },
+      "position": { "x": 1320, "y": 75 },
+      "width": 320,
+      "height": 290,
+      "parentId": "group-s2-1701302102453-yciv",
+      "extent": "parent"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-s2-insight",
+      "type": "custom",
+      "source": "stage-2-1",
+      "target": "insight-node-2"
+    },
+    {
+      "id": "e-insight-outcome",
+      "type": "custom",
+      "source": "insight-node-2",
+      "target": "outcome-node-3"
+    },
+    {
+      "id": "e-outcome-direction",
+      "type": "custom",
+      "source": "outcome-node-3",
+      "target": "direction-node-4"
+    },
+    {
+      "id": "e-direction-gate",
+      "type": "custom",
+      "source": "direction-node-4",
+      "target": "gate-problem-5"
+    },
+    {
+      "id": "e-gate-alignment",
+      "type": "custom",
+      "source": "gate-problem-5",
+      "target": "alignment-gate-6"
+    },
+    {
+      "id": "e-evidence-gate",
+      "type": "custom",
+      "source": "evidence-node-7",
+      "target": "gate-problem-5",
+      "label": "evidence"
+    }
+  ],
+  "evidence": [],
+  "exportedAt": ""
+}
