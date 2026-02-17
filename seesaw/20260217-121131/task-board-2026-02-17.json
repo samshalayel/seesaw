@@ -1,0 +1,286 @@
+{
+  "columns": [
+    {
+      "title": "السياق",
+      "color": "from-orange-500 to-amber-500",
+      "tasks": [
+        {
+          "title": "نظام إدارة الدعم الفني",
+          "description": "",
+          "priority": "high",
+          "tags": [
+            "السياق"
+          ]
+        },
+        {
+          "title": "تكنولوجيا قديمة",
+          "description": "",
+          "priority": "medium",
+          "tags": [
+            "السياق"
+          ]
+        },
+        {
+          "title": "مشاكل تقنية",
+          "description": "",
+          "priority": "low",
+          "tags": [
+            "السياق"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "المشكلة الأساسية",
+      "color": "from-blue-500 to-cyan-500",
+      "tasks": [
+        {
+          "title": "الأداء السيء وعدم الدقة في الإحصائيات",
+          "description": "",
+          "priority": "medium",
+          "tags": [
+            "المشكلة الأساسية"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "الأطراف المعنية",
+      "color": "from-purple-500 to-pink-500",
+      "tasks": [
+        {
+          "title": "الداعمون الفنيون",
+          "description": "",
+          "priority": "high",
+          "tags": [
+            "الأطراف المعنية"
+          ]
+        },
+        {
+          "title": "العملاء",
+          "description": "",
+          "priority": "medium",
+          "tags": [
+            "الأطراف المعنية"
+          ]
+        },
+        {
+          "title": "مدير النظام",
+          "description": "",
+          "priority": "low",
+          "tags": [
+            "الأطراف المعنية"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "الإشارات",
+      "color": "from-green-500 to-emerald-500",
+      "tasks": [
+        {
+          "title": "الأرقام الخاطئة في الداش بورد",
+          "description": "",
+          "priority": "high",
+          "tags": [
+            "الإشارات"
+          ]
+        },
+        {
+          "title": "التصنيف المهلهل",
+          "description": "",
+          "priority": "medium",
+          "tags": [
+            "الإشارات"
+          ]
+        },
+        {
+          "title": "طلب الإغلاقات دون موافقة المستخدم",
+          "description": "",
+          "priority": "low",
+          "tags": [
+            "الإشارات"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "نقاط الاحتكاك",
+      "color": "from-red-500 to-rose-500",
+      "tasks": [
+        {
+          "title": "تجميد النظام",
+          "description": "",
+          "priority": "high",
+          "tags": [
+            "نقاط الاحتكاك"
+          ]
+        },
+        {
+          "title": "أخطاء في الخادم",
+          "description": "",
+          "priority": "medium",
+          "tags": [
+            "نقاط الاحتكاك"
+          ]
+        },
+        {
+          "title": "عدم توفر النظام في جميع الأوقات",
+          "description": "",
+          "priority": "low",
+          "tags": [
+            "نقاط الاحتكاك"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "القيود",
+      "color": "from-indigo-500 to-violet-500",
+      "tasks": [
+        {
+          "title": "استخدام تقنيات قديمة",
+          "description": "",
+          "priority": "high",
+          "tags": [
+            "القيود"
+          ]
+        },
+        {
+          "title": "عدم توفر تحديثات دورية",
+          "description": "",
+          "priority": "medium",
+          "tags": [
+            "القيود"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "النتائج المرجوة",
+      "color": "from-orange-500 to-amber-500",
+      "tasks": [
+        {
+          "title": "تحسين دقة التقارير",
+          "description": "",
+          "priority": "high",
+          "tags": [
+            "النتائج المرجوة"
+          ]
+        },
+        {
+          "title": "تحديث النظام بتقنيات جديدة",
+          "description": "",
+          "priority": "medium",
+          "tags": [
+            "النتائج المرجوة"
+          ]
+        },
+        {
+          "title": "زيادة توفر النظام",
+          "description": "",
+          "priority": "low",
+          "tags": [
+            "النتائج المرجوة"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ضمن النطاق",
+      "color": "from-blue-500 to-cyan-500",
+      "tasks": [
+        {
+          "title": "تحليل النظام الحالي",
+          "description": "",
+          "priority": "high",
+          "tags": [
+            "ضمن النطاق"
+          ]
+        },
+        {
+          "title": "تحسين تجربة المستخدم",
+          "description": "",
+          "priority": "medium",
+          "tags": [
+            "ضمن النطاق"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "خارج النطاق",
+      "color": "from-purple-500 to-pink-500",
+      "tasks": [
+        {
+          "title": "تغييرات في بنية الأعمال",
+          "description": "",
+          "priority": "high",
+          "tags": [
+            "خارج النطاق"
+          ]
+        },
+        {
+          "title": "توفير دعم تقني جديد",
+          "description": "",
+          "priority": "medium",
+          "tags": [
+            "خارج النطاق"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "المجهولات",
+      "color": "from-green-500 to-emerald-500",
+      "tasks": [
+        {
+          "title": "مدى تعقيد التحديثات التقنية اللازمة",
+          "description": "",
+          "priority": "high",
+          "tags": [
+            "المجهولات"
+          ]
+        },
+        {
+          "title": "تكلفة التعديلات اللازمة",
+          "description": "",
+          "priority": "medium",
+          "tags": [
+            "المجهولات"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "أسئلة توضيحية",
+      "color": "from-red-500 to-rose-500",
+      "tasks": [
+        {
+          "title": "ما هي التقنيات الحالية المستخدمة؟",
+          "description": "php codegniter",
+          "priority": "high",
+          "tags": [
+            "أسئلة توضيحية"
+          ]
+        },
+        {
+          "title": "هل هناك خطة زمنية للتحديثات المطلوبة؟",
+          "description": "لا يوجد خطة زمنية",
+          "priority": "medium",
+          "tags": [
+            "أسئلة توضيحية"
+          ]
+        },
+        {
+          "title": "ما حجم التذاكر التي يتم التعامل معها يومياً؟",
+          "description": "1500 تذكرة",
+          "priority": "low",
+          "tags": [
+            "أسئلة توضيحية"
+          ]
+        }
+      ]
+    }
+  ]
+}
