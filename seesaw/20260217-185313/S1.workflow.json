@@ -1,0 +1,115 @@
+{
+  "nodes": [
+    {
+      "id": "group-s1-1701775893208-qxvu",
+      "type": "group",
+      "data": { "label": "S1" },
+      "position": { "x": 150, "y": -705 },
+      "width": 1697,
+      "height": 1100,
+      "style": { "width": 1697, "height": 1100, "zIndex": -1 }
+    },
+    {
+      "id": "stage-1-1",
+      "type": "stage-1",
+      "data": {
+        "group": "S1",
+        "label": "Stage 1 — Product Shape",
+        "description": "تتضمن رؤية المنتج تقديم نظام إدارة تذاكر الدعم الفني حديث ومستقر بتقنيات محدثة. حدود MVP تتضمن إصلاح المشاكل الحالية وإضافة ميزات جديدة لتحسين الأداء. الأولوية الأعلى تشمل تصحيح الأرقام الخاطئة ورفع رضا المستخدمين عن طريق تحسين تجربة المستخدم.",
+        "aiPercentage": 20,
+        "humanPercentage": 80,
+        "aiResponsibilities": ["صياغة قصص المستخدم من المهام","اكتشاف الحالات الحدية في التدفقات","تحليل السوق والمقارنة","تفكيك الميزات إلى وحدات أصغر"],
+        "humanResponsibilities": ["تحديد رؤية المنتج","اعتماد حدود MVP","امتلاك منطق الأولويات","الموافقة على نطاق المنتج"],
+        "stageNumber": 1,
+        "customFields": {}
+      },
+      "position": { "x": 15, "y": 60 },
+      "width": 300,
+      "height": 208,
+      "parentId": "group-s1-1701775893208-qxvu",
+      "extent": "parent"
+    },
+    {
+      "id": "insight-node-2",
+      "type": "insight-node",
+      "data": { "group": "S1", "label": "Insight", "description": "قصص المستخدم الرئيسية تتضمن مراقبة تذاكر الدعم الفني بشكل سلس، وتصحيح الأخطاء مثل الأرقام الخاطئة في الداشبورد. تم اكتشاف الحالات الحدية مثل تلك المتعلقة بالخوادم وأخطاء السيرفر.", "description": "ًاقصص المستخدمين الأساسية تشمل تتبع تذاكر الدعم وتحسين الداشبورد، مع التركيز على إصلاح الخلل الفني وتجنب أخطاء الخادم.","width": 300,
+      "height": 297,
+      "parentId": "group-s1-1701775893208-qxvu",
+      "extent": "parent"
+    },
+    {
+      "id": "outcome-node-3",
+      "type": "outcome-node",
+      "data": { "group": "S1", "label": "Outcome", "description": "المخراج النهائي يتضمن نظام دعم فني فعال وواجهة مستخدم محسنة تعرض أرقامًا دقيقة تزيد من دقة العمليات وتنظيم الطلبات.", "width": 300,
+      "height": 299,
+      "parentId": "group-s1-1701775893208-qxvu",
+      "extent": "parent"
+    },
+    {
+      "id": "direction-node-4",
+      "type": "direction-node",
+      "data": { "group": "S1", "label": "Direction", "description": "سيتم التركيز على إصلاح الأخطاء التقنية والحد من الشكاوى. الميزات الأساسية تتضمن تحسين الداشبورد وتصحيح الأرقام غير الصحيحة. القواعد تشمل تحسين تفاعل المستخدم وتأجيل الميزات غير الحرجة.", "width": 300,
+      "height": 299,
+      "parentId": "group-s1-1701775893208-qxvu",
+      "extent": "parent"
+    },
+    {
+      "id": "gate-problem-5",
+      "type": "gate-problem",
+      "data": {
+        "group": "S1",
+        "label": "S1 Blocking Gate",
+        "description": "بوابة المنتج: التأكد من وضوح نطاق MVP واعتماد جميع أولويات المنتج للانتقال إلى التصميم المعماري.",
+        "gateType": "product",
+        "decisionAuthority": "Human Only",
+        "gateStatus": "pending",
+        "aiPercentage": 0,
+        "humanPercentage": 100,
+        "gateChecklist": ["تم تحديد رؤية المنتج","تم تعريف حدود MVP","تم اعتماد الأولويات","تم كتابة قصص المستخدم الرئيسية","تم حصر الحالات الحدية"]
+      },
+      "position": { "x": 1095, "y": 540 },
+      "width": 402,
+      "height": 237,
+      "parentId": "group-s1-1701775893208-qxvu",
+      "extent": "parent"
+    },
+    {
+      "id": "alignment-gate-6",
+      "type": "alignment-gate",
+      "data": { "group": "S1", "label": "Alignment Gate", "description": "Non-blocking: مراجعة سريعة لتأكيد أن الأطراف متفقة على شكل المنتج (Actors/Flow/Rules) قبل التقدم." },
+      "position": { "x": 1395, "y": 795 },
+      "width": 280,
+      "height": 298,
+      "parentId": "group-s1-1701775893208-qxvu",
+      "extent": "parent"
+    },
+    {
+      "id": "evidence-node-7",
+      "type": "evidence-node",
+      "data": {
+        "group": "S1",
+        "label": "Evidence",
+        "mandatory": true,
+        "description": "الأدلة: وثيقة نطاق MVP + قصص المستخدم + مصفوفة الأولويات.",
+        "evidenceKey": "s1_docs_pack",
+        "justification": "هذه الأدلة مهمة لأنها تعزز وضوح رؤية المنتج وتضمن توافق الأطراف على نطاق العمل والمخرجات.",
+        "owner": "فريق تقنية المعلومات"
+      },
+      "position": { "x": 1320, "y": 75 },
+      "width": 320,
+      "height": 290,
+      "parentId": "group-s1-1701775893208-qxvu",
+      "extent": "parent"
+    }
+  ],
+  "edges": [
+    { "id": "e-s1-insight", "type": "custom", "source": "stage-1-1", "target": "insight-node-2" },
+    { "id": "e-insight-outcome", "type": "custom", "source": "insight-node-2", "target": "outcome-node-3" },
+    { "id": "e-outcome-direction", "type": "custom", "source": "outcome-node-3", "target": "direction-node-4" },
+    { "id": "e-direction-gate", "type": "custom", "source": "direction-node-4", "target": "gate-problem-5" },
+    { "id": "e-gate-alignment", "type": "custom", "source": "gate-problem-5", "target": "alignment-gate-6" },
+    { "id": "e-evidence-gate", "type": "custom", "source": "evidence-node-7", "target": "gate-problem-5", "label": "evidence" }
+  ],
+  "evidence": [],
+  "exportedAt": ""
+}
