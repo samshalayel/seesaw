@@ -1,0 +1,207 @@
+{
+  "nodes": [
+    {
+      "id": "group-s2-1700857673-4bvf",
+      "type": "group",
+      "data": {
+        "label": "S2"
+      },
+      "position": {
+        "x": 150,
+        "y": -705
+      },
+      "width": 1697,
+      "height": 1100,
+      "style": {
+        "width": 1697,
+        "height": 1100,
+        "zIndex": -1
+      }
+    },
+    {
+      "id": "stage-2-1",
+      "type": "stage-2",
+      "data": {
+        "group": "S2",
+        "label": "Stage 2 — Conceptual Architecture Spine",
+        "description": "مرحلة تصميم العمود الفقري المعماري المفاهيمي للمنظومة التقنية، مع التركيز على تحديد المكونات والدول المعنية في إطار غير تقني.",
+        "aiPercentage": 25,
+        "humanPercentage": 75,
+        "aiResponsibilities": [
+          "تحليل هيكل النظام العام",
+          "اقتراح تحسينات"
+        ],
+        "humanResponsibilities": [
+          "مراجعة الهيكل المفاهيمي",
+          "تحديد المكونات الأساسية"
+        ]
+      },
+      "position": {
+        "x": 15,
+        "y": 60
+      },
+      "width": 300,
+      "height": 208,
+      "parentId": "group-s2-1700857673-4bvf",
+      "extent": "parent"
+    },
+    {
+      "id": "insight-node-2",
+      "type": "insight-node",
+      "data": {
+        "group": "S2",
+        "label": "Insight",
+        "description": "البحث في نهج التصميم المفاهيمي واختباره ضد النتائج المرجوة من أجل تعزيز الاتصال الفعال بين الفِرق."
+      },
+      "position": {
+        "x": 210,
+        "y": 285
+      },
+      "width": 300,
+      "height": 297,
+      "parentId": "group-s2-1700857673-4bvf",
+      "extent": "parent"
+    },
+    {
+      "id": "outcome-node-3",
+      "type": "outcome-node",
+      "data": {
+        "group": "S2",
+        "label": "Outcome",
+        "description": "وضع مخطط معماري مفاهيمي دقيق ومفصل يحدد جميع الفاعلين والمكونات."
+      },
+      "position": {
+        "x": 570,
+        "y": 90
+      },
+      "width": 300,
+      "height": 299,
+      "parentId": "group-s2-1700857673-4bvf",
+      "extent": "parent"
+    },
+    {
+      "id": "direction-node-4",
+      "type": "direction-node",
+      "data": {
+        "group": "S2",
+        "label": "Direction",
+        "description": "توجيه عملية التطوير نحو تصميم عمود فقري مفاهيمي يعزز التعاون ويحدد المسؤوليات."
+      },
+      "position": {
+        "x": 915,
+        "y": 225
+      },
+      "width": 300,
+      "height": 299,
+      "parentId": "group-s2-1700857673-4bvf",
+      "extent": "parent"
+    },
+    {
+      "id": "gate-problem-5",
+      "type": "gate-problem",
+      "data": {
+        "group": "S2",
+        "label": "S2 Blocking Gate",
+        "description": "الحاجة إلى تأكيد تصميم معماري مفاهيمي غير تقني.",
+        "gateType": "architecture",
+        "decisionAuthority": "Human Only",
+        "gateStatus": "pending",
+        "aiPercentage": 0,
+        "humanPercentage": 100,
+        "gateChecklist": [
+          "تم استعراض العمود الفقري المعماري",
+          "تم التحقق من جميع المكونات."
+        ],
+        "justification": "تعد هذه المرحلة أساسية لتطوير المنظومة بأكملها.",
+        "owner": "فريق التطوير"
+      },
+      "position": {
+        "x": 1095,
+        "y": 540
+      },
+      "width": 402,
+      "height": 237,
+      "parentId": "group-s2-1700857673-4bvf",
+      "extent": "parent"
+    },
+    {
+      "id": "alignment-gate-6",
+      "type": "alignment-gate",
+      "data": {
+        "group": "S2",
+        "label": "Alignment Gate",
+        "description": "Non-blocking: مراجعة سريعة للتأكد أن العمود الفقري المفاهيمي لا يتجاوز النطاق ولا يقفز للتقنيات."
+      },
+      "position": {
+        "x": 1395,
+        "y": 795
+      },
+      "width": 280,
+      "height": 298,
+      "parentId": "group-s2-1700857673-4bvf",
+      "extent": "parent"
+    },
+    {
+      "id": "evidence-node-7",
+      "type": "evidence-node",
+      "data": {
+        "group": "S2",
+        "label": "Evidence",
+        "mandatory": true,
+        "description": "أدلة جمعت لدعم التصميم المفاهيمي المقترح.",
+        "evidenceKey": "s2_docs_pack",
+        "justification": "تساعد هذه الأدلة في تحقيق التوافق حول التصميم المقترح.",
+        "owner": "فريق التوثيق"
+      },
+      "position": {
+        "x": 1320,
+        "y": 75
+      },
+      "width": 320,
+      "height": 290,
+      "parentId": "group-s2-1700857673-4bvf",
+      "extent": "parent"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-s2-insight",
+      "type": "custom",
+      "source": "stage-2-1",
+      "target": "insight-node-2"
+    },
+    {
+      "id": "e-insight-outcome",
+      "type": "custom",
+      "source": "insight-node-2",
+      "target": "outcome-node-3"
+    },
+    {
+      "id": "e-outcome-direction",
+      "type": "custom",
+      "source": "outcome-node-3",
+      "target": "direction-node-4"
+    },
+    {
+      "id": "e-direction-gate",
+      "type": "custom",
+      "source": "direction-node-4",
+      "target": "gate-problem-5"
+    },
+    {
+      "id": "e-gate-alignment",
+      "type": "custom",
+      "source": "gate-problem-5",
+      "target": "alignment-gate-6"
+    },
+    {
+      "id": "e-evidence-gate",
+      "type": "custom",
+      "source": "evidence-node-7",
+      "target": "gate-problem-5",
+      "label": "evidence"
+    }
+  ],
+  "evidence": [],
+  "exportedAt": ""
+}
