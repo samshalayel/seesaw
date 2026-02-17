@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "id": "group-s1-1700845560770-xvby",
+      "type": "group",
+      "data": { "label": "S1" },
+      "position": { "x": 150, "y": -705 },
+      "width": 1697,
+      "height": 1100,
+      "style": { "width": 1697, "height": 1100, "zIndex": -1 }
+    },
+    {
+      "id": "stage-1-1",
+      "type": "stage-1",
+      "data": {
+        "group": "S1",
+        "label": "Stage 1 — Product Shape",
+        "description": "يتمثل التوجه نحو تحديد رؤية المنتج وكيفية معالجة المشاكل الحالية في النظام الفني. تشمل رؤية المنتج تطوير تحسينات تتعلق بالأسس التقنية للبرنامج، مع التركيز على تحسين دقة البيانات المتناولة وعملية إغلاق التذاكر. التركيز أيضاً على التأكد من أن جميع التحديثات والتعديلات تُطبق بعد الموافقة من الجهة المطلوبة لتجنب أي إغلاق غير مقصود للتذاكر.",
+        "aiPercentage": 20,
+        "humanPercentage": 80,
+        "aiResponsibilities": ["صياغة قصص المستخدم من المهام","اكتشاف الحالات الحدية في التدفقات","تحليل السوق والمقارنة","تفكيك الميزات إلى وحدات أصغر"],
+        "humanResponsibilities": ["تحديد رؤية المنتج","اعتماد حدود MVP","امتلاك منطق الأولويات","الموافقة على نطاق المنتج"],
+        "stageNumber": 1,
+        "customFields": {}
+      },
+      "position": { "x": 15, "y": 60 },
+      "width": 300,
+      "height": 208,
+      "parentId": "group-s1-1700845560770-xvby",
+      "extent": "parent"
+    },
+    {
+      "id": "insight-node-2",
+      "type": "insight-node",
+      "data": {
+        "group": "S1",
+        "label": "Insight",
+        "description": "من خلال المعلومات التي توفرها التذاكر، يمكننا كتابة قصص مستخدم رئيسية مثل: 'كمستخدم، أرغب في معرفة إحصائيات الأداء الدقيقة للداشبورد.' أو 'كفني، أحتاج للتأكد من تسجيل المستندات بشكل صحيح لضمان التتبع الدقيق.' حالات حدية تشمل: 'ماذا يحدث إذا كانت البيانات غير مكتملة؟' وماذا لو تم إغلاق الطلبات احتياطياً دون موافقة؟'
+      },
+      "position": { "x": 210, "y": 285 },
+      "width": 300,
+      "height": 297,
+      "parentId": "group-s1-1700845560770-xvby",
+      "extent": "parent"
+    },
+    {
+      "id": "outcome-node-3",
+      "type": "outcome-node",
+      "data": {
+        "group": "S1",
+        "label": "Outcome",
+        "description": "المخرجات: نطاق MVP معتمد + قصص المستخدم + تعريف الأولويات + قائمة الحالات الحدية. تتضمن عدداً من القصص التي تتيح للمستخدم والفنيين التعامل بسلاسة مع النظام، بالإضافة لتطبيق تحليلات جديدة للبيانات لتحديث المعلومات فوراً."
+      },
+      "position": { "x": 570, "y": 90 },
+      "width": 300,
+      "height": 299,
+      "parentId": "group-s1-1700845560770-xvby",
+      "extent": "parent"
+    },
+    {
+      "id": "direction-node-4",
+      "type": "direction-node",
+      "data": {
+        "group": "S1",
+        "label": "Direction",
+        "description": "اتجاه المنتج يركز على تحسين الواجهة وتبسيط الإجراءات لزيادة كفاءة العمل. تتجه الأولويات نحو ضمان دقة البيانات وتحسين التجربة العامة للمستخدم، بينما يتم تأجيل الميزات الوظيفية الجديدة غير الملحة إلى مراحل لاحقة."
+      },
+      "position": { "x": 915, "y": 225 },
+      "width": 300,
+      "height": 299,
+      "parentId": "group-s1-1700845560770-xvby",
+      "extent": "parent"
+    },
+    {
+      "id": "gate-problem-5",
+      "type": "gate-problem",
+      "data": {
+        "group": "S1",
+        "label": "S1 Blocking Gate",
+        "description": "بوابة المنتج: هل تم تحديد نطاق MVP بوضوح وهل الأولويات معتمدة للانتقال للمعمارية؟ يجب الإجابة على الأسئلة الأساسية حول كيف سيتم تحسين النظام ليلائم احتياجات المستخدم الحالية والتحديات التي يواجهونها.",
+        "gateType": "product",
+        "decisionAuthority": "Human Only",
+        "gateStatus": "pending",
+        "aiPercentage": 0,
+        "humanPercentage": 100,
+        "gateChecklist": ["تم تحديد رؤية المنتج","تم تعريف حدود MVP","تم اعتماد الأولويات","تم كتابة قصص المستخدم الرئيسية","تم حصر الحالات الحدية"]
+      },
+      "position": { "x": 1095, "y": 540 },
+      "width": 402,
+      "height": 237,
+      "parentId": "group-s1-1700845560770-xvby",
+      "extent": "parent"
+    },
+    {
+      "id": "alignment-gate-6",
+      "type": "alignment-gate",
+      "data": {
+        "group": "S1",
+        "label": "Alignment Gate",
+        "description": "Non-blocking: مراجعة سريعة لتأكيد أن الأطراف متفقة على شكل المنتج (Actors/Flow/Rules) قبل التقدم."
+      },
+      "position": { "x": 1395, "y": 795 },
+      "width": 280,
+      "height": 298,
+      "parentId": "group-s1-1700845560770-xvby",
+      "extent": "parent"
+    },
+    {
+      "id": "evidence-node-7",
+      "type": "evidence-node",
+      "data": {
+        "group": "S1",
+        "label": "Evidence",
+        "mandatory": true,
+        "description": "الأدلة: وثيقة نطاق MVP + قصص المستخدم + مصفوفة الأولويات.",
+        "evidenceKey": "s1_docs_pack",
+        "justification": "الأدلة ضرورية لضمان توافق جميع الأطراف على الأهداف المشتركة وضبط الأساليب المستخدمة لتحقيقها. يتيح ذلك تحديد النقاط المطلوبة للتركيز والتحقق من أن التغييرات تلبي المتطلبات المتوقعة.",
+        "owner": "مالك المنتج أو الفريق المسؤول من أطراف المشروع."
+      },
+      "position": { "x": 1320, "y": 75 },
+      "width": 320,
+      "height": 290,
+      "parentId": "group-s1-1700845560770-xvby",
+      "extent": "parent"
+    }
+  ],
+  "edges": [
+    { "id": "e-s1-insight", "type": "custom", "source": "stage-1-1", "target": "insight-node-2" },
+    { "id": "e-insight-outcome", "type": "custom", "source": "insight-node-2", "target": "outcome-node-3" },
+    { "id": "e-outcome-direction", "type": "custom", "source": "outcome-node-3", "target": "direction-node-4" },
+    { "id": "e-direction-gate", "type": "custom", "source": "direction-node-4", "target": "gate-problem-5" },
+    { "id": "e-gate-alignment", "type": "custom", "source": "gate-problem-5", "target": "alignment-gate-6" },
+    { "id": "e-evidence-gate", "type": "custom", "source": "evidence-node-7", "target": "gate-problem-5", "label": "evidence" }
+  ],
+  "evidence": [],
+  "exportedAt": ""
+}
