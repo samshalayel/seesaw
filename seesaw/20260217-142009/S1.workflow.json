@@ -1,0 +1,122 @@
+{
+  "nodes": [
+    {
+      "id": "group-s1-1700823420000-abcd",
+      "type": "group",
+      "data": { "label": "S1" },
+      "position": { "x": 150, "y": -705 },
+      "width": 1697,
+      "height": 1100,
+      "style": { "width": 1697, "height": 1100, "zIndex": -1 }
+    },
+    {
+      "id": "stage-1-1",
+      "type": "stage-1",
+      "data": {
+        "group": "S1",
+        "label": "Stage 1 — Product Shape",
+        "description": "تشمل الأطراف الفاعلة الداعمون الفنيون والعملاء ومدير النظام. تتضمن التدفق العملياتي خمس خطوات لضمان الدقة وتحسين تجارب المستخدم."
+        "aiPercentage": 20,
+        "humanPercentage": 80,
+        "aiResponsibilities": ["تحليل تدفقات العمل الحالية","رسم خريطة التفاعلات بين الأطراف","اكتشاف الاحتكاكات في العمليات"],
+        "humanResponsibilities": ["مقابلة الأطراف المعنية","تأكيد سيناريوهات الاستخدام","اعتماد قواعد العمل"],
+        "stageNumber": 1,
+        "customFields": {}
+      },
+      "position": { "x": 15, "y": 60 },
+      "width": 300,
+      "height": 208,
+      "parentId": "group-s1-1700823420000-abcd",
+      "extent": "parent"
+    },
+    {
+      "id": "insight-node-2",
+      "type": "insight-node",
+      "data": { "group": "S1", "label": "Insight", "description": "تجميد النظام وأخطاء الخادم يعدان من نقاط الاحتكاك الرئيسية التي تؤدي إلى تعطيل تدفقات العمل." },
+      "position": { "x": 210, "y": 285 },
+      "width": 300,
+      "height": 297,
+      "parentId": "group-s1-1700823420000-abcd",
+      "extent": "parent"
+    },
+    {
+      "id": "outcome-node-3",
+      "type": "outcome-node",
+      "data": { "group": "S1", "label": "Outcome", "description": "خريطة الأطراف الفاعلة + تدفق العمليات من 5 خطوات + قواعد العمل المعتمدة" },
+      "position": { "x": 570, "y": 90 },
+      "width": 300,
+      "height": 299,
+      "parentId": "group-s1-1700823420000-abcd",
+      "extent": "parent"
+    },
+    {
+      "id": "direction-node-4",
+      "type": "direction-node",
+      "data": { "group": "S1", "label": "Direction", "description": "التفاعل بين الداعمين الفنيين والعملاء هو محور التركيز مع قواعد تحكم التفاعلات والشكاوي." },
+      "position": { "x": 915, "y": 225 },
+      "width": 300,
+      "height": 299,
+      "parentId": "group-s1-1700823420000-abcd",
+      "extent": "parent"
+    },
+    {
+      "id": "gate-problem-5",
+      "type": "gate-problem",
+      "data": {
+        "group": "S1",
+        "label": "S1 Blocking Gate",
+        "description": "هل تم تحديد جميع الأطراف وتدفقات العمل وقواعد التشغيل؟",
+        "gateType": "product",
+        "decisionAuthority": "Human Only",
+        "gateStatus": "pending",
+        "aiPercentage": 0,
+        "humanPercentage": 100,
+        "gateChecklist": ["تم حصر كل الأطراف الفاعلة","تم رسم تدفق العمليات","تم توثيق قواعد العمل","تم تحديد نقاط الاحتكاك"]
+      },
+      "position": { "x": 1095, "y": 540 },
+      "width": 402,
+      "height": 237,
+      "parentId": "group-s1-1700823420000-abcd",
+      "extent": "parent"
+    },
+    {
+      "id": "alignment-gate-6",
+      "type": "alignment-gate",
+      "data": { "group": "S1", "label": "Alignment Gate", "description": "Non-blocking: مراجعة سريعة لتأكيد أن الأطراف متفقة على شكل المنتج (Actors/Flow/Rules) قبل التقدم." },
+      "position": { "x": 1395, "y": 795 },
+      "width": 280,
+      "height": 298,
+      "parentId": "group-s1-1700823420000-abcd",
+      "extent": "parent"
+    },
+    {
+      "id": "evidence-node-7",
+      "type": "evidence-node",
+      "data": {
+        "group": "S1",
+        "label": "Evidence",
+        "mandatory": true,
+        "description": "وثائق مقابلات الأطراف + مخطط التدفق + قائمة القواعد",
+        "evidenceKey": "s1_docs_pack",
+        "justification": "هذه الوثائق تضمن أن الجميع متفق على التفاصيل الضرورية لتطوير المنتج بصورة صحيحة.",
+        "owner": "فريق الدعم الفني"
+      },
+      "position": { "x": 1320, "y": 75 },
+      "width": 320,
+      "height": 290,
+      "parentId": "group-s1-1700823420000-abcd",
+      "extent": "parent"
+    }
+  ],
+  "edges": [
+    { "id": "e-s1-insight", "type": "custom", "source": "stage-1-1", "target": "insight-node-2" },
+    { "id": "e-insight-outcome", "type": "custom", "source": "insight-node-2", "target": "outcome-node-3" },
+    { "id": "e-outcome-direction", "type": "custom", "source": "outcome-node-3", "target": "direction-node-4" },
+    { "id": "e-direction-gate", "type": "custom", "source": "direction-node-4", "target": "gate-problem-5" },
+    { "id": "e-gate-alignment", "type": "custom", "source": "gate-problem-5", "target": "alignment-gate-6" },
+    { "id": "e-evidence-gate", "type": "custom", "source": "evidence-node-7", "target": "gate-problem-5", "label": "evidence" }
+  ],
+  "evidence": [],
+  "exportedAt": ""
+}
+
