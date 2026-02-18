@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "id": "group-s1-1700790146143-khwe",
+      "type": "group",
+      "data": { "label": "S1" },
+      "position": { "x": 150, "y": -705 },
+      "width": 1697,
+      "height": 1100,
+      "style": { "width": 1697, "height": 1100, "zIndex": -1 }
+    },
+    {
+      "id": "stage-1-1",
+      "type": "stage-1",
+      "data": {
+        "group": "S1",
+        "label": "Stage 1 — Product Shape",
+        "description": "تشمل الأطراف المشاركة: فريق الدعم الفني الذي يشمل مالك التذكرة، رئيس القسم، رئيس الفريق ومهندس فني. يتفاعل هؤلاء الأطراف مع بعضهم البعض ومن النظام والأجهزة مثل أجهزة التصوير سونار لضمان فعالية النظام وإدارته بشكل صحيح.",
+        "aiPercentage": 20,
+        "humanPercentage": 80,
+        "aiResponsibilities": ["صياغة قصص المستخدم من المهام","اكتشاف الحالات الحدية في التدفقات","تحليل السوق والمقارنة"],
+        "humanResponsibilities": ["تحديد رؤية المنتج","اعتماد حدود MVP","امتلاك منطق الأولويات","الموافقة على نطاق المنتج"],
+        "stageNumber": 1,
+        "customFields": {}
+      },
+      "position": { "x": 15, "y": 60 },
+      "width": 300,
+      "height": 208,
+      "parentId": "group-s1-1700790146143-khwe",
+      "extent": "parent"
+    },
+    {
+      "id": "insight-node-2",
+      "type": "insight-node",
+      "data": { "group": "S1", "label": "Insight", "description": "تتبع عملية التدفق 5 خطوات محددة: 1. تفاعل مالك التذكرة مع المستخدم، 2. تسجيل المشكلة في النظام، 3. نقل الطلب إلى رئيس الفريق، 4. معاينة الطلب عبر الأجهزة، 5. إغلاق الطلب بعد موافقة رئيس القسم." },
+      "position": { "x": 210, "y": 285 },
+      "width": 300,
+      "height": 297,
+      "parentId": "group-s1-1700790146143-khwe",
+      "extent": "parent"
+    },
+    {
+      "id": "outcome-node-3",
+      "type": "outcome-node",
+      "data": { "group": "S1", "label": "Outcome", "description": "يتم تحديد نطاق MVP عبر حدود واضحة تشمل إدارة فعالة للتذاكر وتسجيل دقيق للسيريال وتحسين نظام الداشبورد لتحقيق نتائج أفضل." },
+      "position": { "x": 570, "y": 90 },
+      "width": 300,
+      "height": 299,
+      "parentId": "group-s1-1700790146143-khwe",
+      "extent": "parent"
+    },
+    {
+      "id": "direction-node-4",
+      "type": "direction-node",
+      "data": { "group": "S1", "label": "Direction", "description": "يجب تضمين القواعد الثلاث الصارمة: 1. لا عمل دون إسناد، 2. لا تحويل حالة قبل الإسناد، 3. لا إغلاق قبل معاينة القسم الطالب." },
+      "position": { "x": 915, "y": 225 },
+      "width": 300,
+      "height": 299,
+      "parentId": "group-s1-1700790146143-khwe",
+      "extent": "parent"
+    },
+    {
+      "id": "gate-problem-5",
+      "type": "gate-problem",
+      "data": {
+        "group": "S1",
+        "label": "S1 Blocking Gate",
+        "description": "",
+        "gateType": "product",
+        "decisionAuthority": "Human Only",
+        "gateStatus": "pending",
+        "aiPercentage": 0,
+        "humanPercentage": 100,
+        "gateChecklist": ["تم تحديد الأطراف المعنية وتفاعلهم بوضوح","تم تحديد خطوات التدفق بوضوح","تم التأكيد على القواعد الصارمة","تم تحديد الحدود كثيرة الحالات الحدية","تم توثيق العناصر خارج النطاق"]
+      },
+      "position": { "x": 1095, "y": 540 },
+      "width": 402,
+      "height": 237,
+      "parentId": "group-s1-1700790146143-khwe",
+      "extent": "parent"
+    },
+    {
+      "id": "alignment-gate-6",
+      "type": "alignment-gate",
+      "data": { "group": "S1", "label": "Alignment Gate", "description": "Non-blocking: مراجعة سريعة لتأكيد أن الأطراف متفقة على شكل المنتج (Actors/Flow/Rules) قبل التقدم." },
+      "position": { "x": 1395, "y": 795 },
+      "width": 280,
+      "height": 298,
+      "parentId": "group-s1-1700790146143-khwe",
+      "extent": "parent"
+    },
+    {
+      "id": "evidence-node-7",
+      "type": "evidence-node",
+      "data": {
+        "group": "S1",
+        "label": "Evidence",
+        "mandatory": true,
+        "description": "تم جمع الأدلة المتعلقة بالنظام الحالي وإدارة التذاكر وأداء الأجهزة ذات الصلة.",
+        "evidenceKey": "s1_docs_pack",
+        "justification": "تضمن هذه الأدلة فحص العمليات الحالية وتحديد الثغرات التنظيمية والتقنية.",
+        "owner": "فريق الدعم الفني"
+      },
+      "position": { "x": 1320, "y": 75 },
+      "width": 320,
+      "height": 290,
+      "parentId": "group-s1-1700790146143-khwe",
+      "extent": "parent"
+    }
+  ],
+  "edges": [
+    { "id": "e-s1-insight", "type": "custom", "source": "stage-1-1", "target": "insight-node-2" },
+    { "id": "e-insight-outcome", "type": "custom", "source": "insight-node-2", "target": "outcome-node-3" },
+    { "id": "e-outcome-direction", "type": "custom", "source": "outcome-node-3", "target": "direction-node-4" },
+    { "id": "e-direction-gate", "type": "custom", "source": "direction-node-4", "target": "gate-problem-5" },
+    { "id": "e-gate-alignment", "type": "custom", "source": "gate-problem-5", "target": "alignment-gate-6" },
+    { "id": "e-evidence-gate", "type": "custom", "source": "evidence-node-7", "target": "gate-problem-5", "label": "evidence" }
+  ],
+  "evidence": [],
+  "exportedAt": ""
+}
